@@ -1,0 +1,237 @@
+﻿
+/*
+    1-Common styles
+    2-Genaral style
+    3-Sections
+        3.0- Header section
+        3.1- Home section
+        3.2- About section
+        3.3- Protfollo section
+        3.4- Services section
+        3.5- Pricrs section
+        3.6- Team section
+        3.7- Blog section
+*/
+
+
+    /*Common Styles*/
+/*
+    contaner
+    opacity hover
+    section heder
+    section padding
+    hover effect 1(left to right)
+    hover effect 2 (top to bottom)
+
+
+*/
+    /*Genaral Style*/
+    body {
+   
+        font-family: 'Varela Round', sans-serif;
+    }
+    :root{
+        --minecolor:#6195ff;
+        --graycolor:#999;
+        --bg-gray:#f9f9f9;
+        --whitecolor:#fff;
+    }
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.hover-opacity{
+    transition:opacity .5s;
+}
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+.ltr-effect , .tb-effect {
+    position: relative;
+}
+.ltr-effect:after ,.tb-effect:after{
+    position: absolute;
+    content: "";
+    background: #333;
+    
+    right:0;
+    bottom:0;
+    top: 0;
+    left: 0;
+    
+    z-index:-1;
+}
+    .ltr-effect:after{
+    transition: width 0.5s;
+    width: 0;
+    }
+    .tb-effect:after {
+        height: 0;
+        transition: height 0.5s;
+    }
+    .ltr-effect:hover:after {
+        width: 100%;
+    }
+    .tb-effect:hover:after {
+        height: 100%;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    
+
+    
+
+.contaner {
+    width: 80%;
+    margin: auto;
+  
+}
+h1, h2, h3, h4.h5, h6 {
+    font-family: Arial,sans-serif;
+}
+button{
+    font-family:inherit;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+.pd-y{
+    padding:120px 0;
+
+}
+.section-header{
+    text-align:center;
+    
+}
+ul{
+    list-style: none;
+}
+
+    .section-header .section-title {
+        font-size: 35px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+    .section-header .line{
+        display:block;
+        height:5px;
+        width:60px;
+        margin: 0 auto 70px auto;
+        background-color:var(--minecolor); 
+    }
+    /*Header*/
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: rgba(0,0,0,0.4);
+    }
+
+
+.header .logo {
+    width: 40%;
+    float: left;
+}
+.header .logo img{
+    width:20%;
+    margin-top:5px;
+}
+.header .nav {
+     width:60%;
+    float: left;
+    text-align:right;
+     
+}
+.header .nav > li{
+    display:inline-block;
+    padding:20px;
+    text-align:right;
+}
+.header .nav > li > a{
+    font-size:15px;
+    color:var(--whitecolor);
+    display:block;
+    line-height: 20px;
+   
+}
+
+    .header .nav > li >a:after, 
+    .header .nav > li >a.active:after {
+        content: "";
+        display: block;
+        width: 0;
+        margin-top:2px;
+        height: 3px;
+        background-color: var(--minecolor);
+        transition: width .5s;
+    }
+    .header .nav > li >a:after {
+        width: 0;
+     }   
+    .header .nav > li >a.active:after {
+        width: 100%;
+    }
+        .header .nav > li >a:hover:after{
+            width:100%;
+        }
+        .dropdown{
+            position:relative;
+        }
+.dropdown-mneu {
+    position: absolute;
+    background-color: var(--minecolor);
+    width: 100px;
+    text-align: center;
+    left: -50%;
+    opacity: 0;
+    margin-left: 20px;
+    visibility: hidden;
+    top: 75%;
+    transition: opacity 0.5s,visibility 1s;
+}
+            .dropdown-mneu a {
+                color: var(--whitecolor);
+                 display:block;
+                 padding:10px;
+                
+            }
+         .dropdown:hover .dropdown-mneu{
+             opacity:1;
+             visibility:visible;
+         }
+            /* Home section*/
+            
+
+    .clear {
+        clear: both;
+    }
+    
+  
+
+
+      
+
+
+
+
+
+
+
+
+
+

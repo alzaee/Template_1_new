@@ -1,0 +1,39 @@
+
+  /*offer*/
+
+  .offer-content{
+    overflow:hidden;
+
+}
+.offer-item{
+position:relative;
+width:30%;
+float:left;
+margin-bottom:20px;
+border:1px solid #e8e8e8;
+padding:20px 15px 30px 70px;
+}
+.offer-item.mg{
+    margin:0 5%;
+}
+.offer-item-title {
+    transition:color .5s;
+    text-transform:capitalize;
+    margin-bottom:15px;
+}
+.offer-item-desc {
+text-transform: capitalize;
+margin-bottom: 15px;
+line-height:1.6;
+color:var(--graycolor);
+}
+.offer-item .icon {
+position: absolute;
+left: 15px;
+top: 20px;
+font-size:33px;
+color:var(--minecolor);
+}
+.offer-item:hover .offer-item-title{
+color:var(--whitecolor);
+}

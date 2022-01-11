@@ -1,0 +1,32 @@
+
+/*Get section*/
+.get-content{
+    overflow: hidden;
+}
+.get-item{
+    width: 33%;
+    float: left;
+   background: var(--whitecolor);
+   text-align: center;
+   margin: 20px 0;
+   margin-bottom: 15px;
+   
+}
+
+
+.get-item i{
+    color:var(--minecolor);
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.get-item .get-name{
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.get-item .get-model{
+    color: var(--graycolor);
+    margin-bottom: 25px;
+}
+
+
